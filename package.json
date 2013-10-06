@@ -1,0 +1,11 @@
+{
+  "name": "wellcome-trust",
+  "description": "H.O.P.E. - proposal for Wellcome Trust grant",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
