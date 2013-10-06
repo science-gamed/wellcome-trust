@@ -20,6 +20,10 @@ module.exports = function ( grunt ) {
 			index: {
 				files: [ 'src/index.html' ],
 				tasks: 'copy:index'
+			},
+			assets: {
+				files: [ 'src/assets/**/*' ],
+				tasks: [ 'clean:assets', 'copy:assets' ]
 			}
 		},
 
@@ -40,11 +44,20 @@ module.exports = function ( grunt ) {
 			index: {
 				src: 'src/index.html',
 				dest: 'build/index.html'
+			},
+			assets: {
+				files: [{
+					expand: true,
+					cwd: 'src/assets/',
+					src: '**/*',
+					dest: 'build/assets/'
+				}]
 			}
 		},
 
 		clean: {
-			build: [ 'build' ]
+			build: [ 'build' ],
+			assets: [ 'build/files' ]
 		}
 	});
 

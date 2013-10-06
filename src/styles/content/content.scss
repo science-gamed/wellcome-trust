@@ -1,0 +1,16 @@
+@import "mixins";
+
+.content {
+	position: relative;
+	padding: 2em 1em 2em 1em;
+	@include border-box;
+
+	@media (min-width: $large) {
+		width: 100%;
+		max-width: 64em;
+		padding-right: 22em;
+		margin: 0 auto;
+	}
+}
+
+@import "blockquote.scss";
