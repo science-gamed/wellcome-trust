@@ -7,11 +7,17 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Venus Rising', 'Arial';
+	font-family: 'Armata', 'Arial';
 	margin: 0 0 1em 0;
 }
 
 p {
-	font-family: 'Arial';
+	font-family: 'Share Tech Mono','Arial';
 	margin: 0 0 1em 0;
+
+}
+
+#terminal {
+	background-color: black;
+	color: #07E011;
 }
