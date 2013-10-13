@@ -7,7 +7,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Armata', 'Arial';
+	font-family: 'Aldrich', 'Arial';
 	margin: 0 0 1em 0;
 }
 
@@ -17,7 +17,24 @@ p {
 
 }
 
-#terminal {
+.terminal {
 	background-color: black;
 	color: #07E011;
+}
+
+.unit-image {
+	float:left; 
+	width:150px;
+}
+
+.unit-header {
+	border: 1px solid  #07E011;
+	width: 80%;
+}
+
+.unit-text {
+	float:left; 
+	padding-left: 50px; 
+	padding-top: 20px;
+	width:300px;
 }
