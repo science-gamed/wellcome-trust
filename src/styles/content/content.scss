@@ -3,6 +3,7 @@
 .content {
 	position: relative;
 	padding: 2em 1em 2em 1em;
+	color: $green;
 	@include border-box;
 
 
@@ -12,6 +13,24 @@
 		padding-right: 22em;
 		margin: 0 auto;
 	}
+
+	h3 {
+		margin: 2em 0 1em 0;
+	}
+
+	h2, h3 {
+		color: $bright-green;
+
+		&:before {
+			content: '>';
+			margin: 0 0.5em 0 0;
+		}
+	}
+
+	.highlight {
+		color: $bright-green;
+	}
 }
 
-@import "blockquote.scss";
+@import "./unit.scss";
+@import "./aside/aside.scss";

@@ -1,0 +1,22 @@
+@import "mixins";
+
+.unit {
+	border: 1px solid $green;
+	padding: 1em 1em 0 1em;
+	margin: 0 0 1em 0;
+	border-radius: 0.1em;
+	background: $dark-green no-repeat 1em 60%;
+	background-size: 8em auto;
+	@include clearfix;
+
+	p {
+		padding: 0 0 0 9em;
+	}
+
+	img {
+		width: 8em;
+		height: 8em;
+		margin: 0 1em 1.5em 0;
+		float: left;
+	}
+}

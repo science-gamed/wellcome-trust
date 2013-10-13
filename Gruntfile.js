@@ -17,8 +17,8 @@ module.exports = function ( grunt ) {
 				files: 'src/**/*.scss',
 				tasks: 'sass'
 			},
-			index: {
-				files: [ 'src/index.html' ],
+			root: {
+				files: [ 'src/index.html', 'src/main.js' ],
 				tasks: 'copy:index'
 			},
 			assets: {
@@ -42,8 +42,12 @@ module.exports = function ( grunt ) {
 
 		copy: {
 			index: {
-				src: 'src/index.html',
-				dest: 'build/index.html'
+				files: [{
+					expand: true,
+					cwd: 'src/',
+					src: '*',
+					dest: 'build/'
+				}]
 			},
 			assets: {
 				files: [{
